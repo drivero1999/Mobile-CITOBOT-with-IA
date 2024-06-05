@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_height">276dp</dimen>
+    <dimen name="title_icon">40dp</dimen>
+    <dimen name="title_icon_margin">10dp</dimen>
+
+    <dimen name="letra_descripcion_s">13sp</dimen>
+    <dimen name="letra_descripcion_m">15sp</dimen>
+    <dimen name="letra_descripcion_l">18sp</dimen>
+    <dimen name="letra_descripcion_xl">21sp</dimen>
+    <dimen name="border_radius">30dp</dimen>
+    <dimen name="padding_lateral">50dp</dimen>
+    <dimen name="margin_top_form">10dp</dimen>
+</resources>

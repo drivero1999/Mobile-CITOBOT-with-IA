@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_normal"
+    tools:context="com.yulagarces.citobot.ui.patient.ConsultarPacienteTFragment">
+
+    <LinearLayout
+        android:id="@+id/cop_contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/cop_consultar_paciente_ico"
+            android:layout_width="46dp"
+            android:layout_height="55dp"
+            android:background="@drawable/icono_consultar_pacientes"/>
+        <TextView
+            android:id="@+id/cop_consultar_paciente_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cop_titulo"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textAppearance="@style/textoAzulNegritaXL"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <EditText
+                android:id="@+id/cop_filtro"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:padding="10dp"
+                android:background="@drawable/fondo_blanco"/>
+            <ImageButton
+                android:id="@+id/cop_buscar"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/icono_lupa"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cop_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="@color/principal"
+            android:id="@+id/tvUser"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

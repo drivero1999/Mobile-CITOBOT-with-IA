@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_normal"
+    tools:context="com.yulagarces.citobot.ui.config.ConfiguracionFragment">
+
+    <LinearLayout
+        android:id="@+id/cfg_contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/cfg_configuracion_ico"
+            android:layout_width="46dp"
+            android:layout_height="55dp"
+            android:background="@drawable/icono_configuracion"
+            android:contentDescription="@string/imagen_configuracion_general"/>
+        <TextView
+            android:id="@+id/cfg_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cfg_titulo"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textAppearance="@style/textoAzulNegritaXL"/>
+
+        <LinearLayout
+            android:id="@+id/cfg_info_vph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:background="@drawable/fondo_gris_azulado"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/cfg_texto_informacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cfg_info"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:layout_weight="3"
+                style="@style/textoAzulNegritaL"/>
+            <ImageView
+                android:id="@+id/cfg_img_informacion"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/text_secundary"
+                android:text="@string/cfg_info"
+                android:gravity="center_horizontal"
+                android:layout_weight="0.1"
+                android:padding="10dp"
+                style="@style/textoAzulNegritaL"
+                android:contentDescription="@string/barra_lateral"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/cfg_info_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:switchMinWidth="56dp"
+                android:checked="true"
+                android:textColor="@color/black"
+                android:text="@string/si"
+                android:textOff="@string/no"
+                android:textOn="@string/_si"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cfg_modo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/cfg_modo_lbl"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/cfg_modo"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textAppearance="@style/textoAzulNegritaL"/>
+
+            <RadioGroup
+                android:id="@+id/cfg_rg_modo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <RadioButton
+                    android:id="@+id/cfg_radio_entrenamiento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/principal"
+                    android:textColor="@color/black"
+                    android:text="@string/cfg_entrenamiento" />
+
+                <RadioButton android:id="@+id/cfg_radio_verificacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/principal"
+                    android:textColor="@color/black"
+                    android:text="@string/cfg_verificacion"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cfg_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/cfg_device_camera_lbl"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/str_camara"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textAppearance="@style/textoAzulNegritaL"/>
+
+            <RadioGroup
+                android:id="@+id/cfg_device_camera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <RadioButton
+                    android:id="@+id/cfg_radio_device_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/principal"
+                    android:textColor="@color/black"
+                    android:text="@string/camara_del_dispositivo" />
+
+                <RadioButton android:id="@+id/cfg_radio_usb_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/principal"
+                    android:textColor="@color/black"
+                    android:text="@string/camara_usb"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cfg_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/textoBlancoNegritaL"
+            android:background="@drawable/btn_primario"
+            android:text="@string/cfg_guardar"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

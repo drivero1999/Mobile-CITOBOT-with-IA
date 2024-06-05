@@ -1,0 +1,273 @@
+<resources>
+    <string name="app_name" translatable="false">CamaraCitobot</string>
+    <string name="permission_tip" translatable="false">You have already denied permission access. Go to the Settings page to turn on permissions</string>
+    <string name="dialog_contact_title" translatable="false">Contact me:</string>
+    <string name="dialog_contact_message" translatable="false">765067602@qq.com\n\n❤ version: %s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all">all</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!--Menu principal-->
+    <string name="mp_titulo">¿Qué desea registrar?</string>
+    <string name="mp_paciente">Nuevo paciente</string>
+    <string name="mp_tamizaje">Nuevo Tamizaje</string>
+
+    <string name="forget_pass">¿Olvidó la contraseña?</string>
+    <!--Consultar Paciente-->
+    <string name="cop_titulo">Consultar pacientes</string>
+
+    <!--Detalle Paciente-->
+    <string name="dp_titulo">Pacientes</string>
+
+    <!--Detalle Tamizaje-->
+    <string name="dt_titulo">Tamizaje detalle</string>
+
+    <!--Tamizaje Pasos-->
+    <string name="t1_titulo">Tamizaje</string>
+    <string name="t1_recordar">- Para tomar un tamizaje recuerde:</string>
+    <string name="t1_paso1_n">1. </string>
+    <string name="t1_paso1_t">Seleccionar VPH + o VPH -</string>
+    <string name="t1_paso2_n">2. </string>
+    <string name="t1_paso2_t">Seleccionar contraste Ácido Acético, Lugol, Lugo + Ácido Acético o Ninguno</string>
+    <string name="t1_paso3_n">3. </string>
+    <string name="t1_paso3_t">Tomar la foto. Puede tomar hasta 3 fotografías para posteriormente seleccionar la más apropiada</string>
+    <string name="t1_paso4_n">4. </string>
+    <string name="t1_paso4_t">Enviar para analizar</string>
+    <string name="t1_ilustracion">- Ilustración indicativa</string>
+    <string name="t1_iniciar">Iniciar</string>
+    <string name="t2_vph">VPH</string>
+    <string name="t2_contraste">Contraste</string>
+    <string name="t2_sin_contraste">Sin Contraste</string>
+    <string name="t2_acido">Ácido Acético</string>
+    <string name="t2_lugol">Lugol</string>
+    <string name="t2_acido_lugol">Ácido acético + Lugol</string>
+    <string name="t2_continuar">Continuar</string>
+    <string name="tf_toma">Toma la primera foto para iniciar</string>
+    <string name="tf_toma_otra">Tomar otra foto</string>
+    <string name="tf_enviar">Enviar</string>
+    <string name="tf_siguiente">Siguiente foto</string>
+
+    <!--Lista Paciente-->
+    <string name="cop_lista">Consultar pacientes</string>
+
+    <!--Crear Paciente-->
+    <string name="crp_nuevo_paciente_ico">Icono nuevo paciente</string>
+    <string name="crp_tipo_id">Tipo de identificación</string>
+    <string-array name="crp_tipo_id_list">
+        <item>Seleccione una opción</item>
+        <item>CC</item>
+        <item>CE</item>
+        <item>P</item>
+        <item>RC</item>
+        <item>TI</item>
+    </string-array>
+    <string name="crp_id">Identificación</string>
+    <string name="crp_primer_nombre">Primer nombre</string>
+    <string name="crp_segundo_nombre">Segundo nombre</string>
+    <string name="crp_primer_apellido">Primer apellido</string>
+    <string name="crp_segundo_apellido">Segundo apellido</string>
+    <string name="crp_fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="crp_direccion">Dirección</string>
+    <string name="crp_telefono">Teléfono</string>
+    <string name="crp_celular">Celular</string>
+    <string name="crp_correo">Correo electrónico</string>
+    <string name="crp_nombre_contacto">Nombre contacto de emergencia</string>
+    <string name="crp_numero_contacto">Número del contacto</string>
+    <string name="crp_nivel_educacion">Nivel de educación</string>
+    <string-array name="crp_nivel_educacion_list">
+        <item>Seleccione una opción</item>
+        <item>Educación Primaria</item>
+        <item>Educación Secundaria</item>
+        <item>Formación Técnica o Tecnológica</item>
+        <item>Educación Universitaria</item>
+        <item>Ninguno</item>
+        <item>No Sabe/No Responde</item>
+    </string-array>
+    <string name="crp_estado_civil">Estado civil</string>
+    <string-array name="crp_estado_civil_list">
+        <item>Seleccione una opción</item>
+        <item>Casada/Unión Libre</item>
+        <item>Separada/Viuda</item>
+        <item>Soltera</item>
+        <item>No Responde</item>
+    </string-array>
+    <string name="crp_situacion_laboral">Situación laboral</string>
+    <string-array name="crp_situacion_laboral_list">
+        <item>Seleccione una opción</item>
+        <item>Obrera/Empleada</item>
+        <item>Trabajadora Informal</item>
+        <item>Trabajadora sin Remuneración</item>
+        <item>Pensionada</item>
+        <item>Propietaria de Negocio o Empresa</item>
+        <item>Trabajadora Independiente</item>
+        <item>Desempleada</item>
+        <item>No sabe/No responde</item>
+    </string-array>
+    <string name="crp_eps">EPS</string>
+    <string-array name="crp_eps_list">
+        <item>Seleccione una opción</item>
+        <item>NO APLICA</item>
+        <item>COMPENSAR EPS</item>
+        <item>EPS FAMISANAR LTDA.</item>
+        <item>EPS SANITAS S.A.</item>
+        <item>EPS SERVICIO OCCIDENTAL DE SALUD S.A.</item>
+        <item>EPS Y MEDICINA PREPAGADA SURAMERICANA S.A.</item>
+        <item>NUEVA EPS S.A.</item>
+        <item>COSMITET</item>
+        <item>ALIANSALUD ENTIDAD PROMOTORA DE SALUD S.A.</item>
+        <item>ASOCIACIÓN INDÍGENA DEL CAUCA</item>
+        <item>ASOCIACIÓN MUTUAL SER</item>
+        <item>EMPRESA SOLIDARIA DE SALUD EPS</item>
+        <item>CAPITAL SALUD</item>
+        <item>COMFENALCO VALLE EPS</item>
+        <item>COOPERATIVA DE SALUD Y DESARROLLO INTEGRAL ZONA SUR ORIENTAL DE CARTAGO</item>
+        <item>EPS CONVIDA</item>
+        <item>EPS SERVICIO OCCIDENTAL DE SALUD S.A.</item>
+        <item>FUNDACIÓN SALUD MIA EPS</item>
+        <item>MALLAMAS</item>
+        <item>SALUD TOTAL S.A. EPS</item>
+        <item>SALUDVIDA S.A. EPS</item>
+        <item>SAVIA SALUD EPS</item>
+    </string-array>
+    <string name="crp_regimen">Regimen de salud</string>
+    <string-array name="crp_regimen_list">
+        <item>Seleccione una opción</item>
+        <item>Contributivo Cotizante</item>
+        <item>Contributivo Beneficiario</item>
+        <item>Subsidiado</item>
+        <item>No Afiliado</item>
+        <item>Especiales</item>
+    </string-array>
+    <string name="crp_estrato">Estrato</string>
+    <string-array name="crp_estrato_list">
+        <item>Seleccione una opción</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="crp_diabetes">Diabetes</string>
+    <string-array name="crp_diabetes_list">
+        <item>Seleccione una opción</item>
+        <item>Si</item>
+        <item>No</item>
+        <item>No sabe/No responde</item>
+    </string-array>
+    <string name="crp_fuma">Fuma</string>
+    <string-array name="crp_fuma_list">
+        <item>Seleccione una opción</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+    <string name="crp_peso">Peso</string>
+    <string name="crp_peso_hint">kg</string>
+    <string name="crp_talla">Talla</string>
+    <string name="crp_talla_hint">cm</string>
+    <string name="crp_primera_mens">Edad primera menstruación</string>
+    <string name="crp_partos">Partos</string>
+    <string-array name="crp_partos_list">
+        <item>Seleccione una opción</item>
+        <item>Ninguno</item>
+        <item>Uno. Primipara</item>
+        <item>Dos+. Multípara</item>
+    </string-array>
+    <string name="crp_dispositivo">Dispositivo intrauterino</string>
+    <string-array name="crp_dispositivo_list">
+        <item>Seleccione una opción</item>
+        <item>Si</item>
+        <item>No</item>
+        <item>No sabe/No responde</item>
+    </string-array>
+    <string name="crp_tiempo_diu">Tiempo inserción DIU</string>
+    <string-array name="crp_tiempo_diu_list">
+        <item>Seleccione una opción</item>
+        <item>NA</item>
+        <item>&lt;5 años</item>
+        <item>10 - 25 años</item>
+        <item>&gt; 10 años</item>
+        <item>No sabe/No responde</item>
+    </string-array>
+    <string name="crp_anticonc_orales">Anticonceptivos orales</string>
+    <string-array name="crp_anticonc_orales_list">
+        <item>Seleccione una opción</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+    <string name="crp_parejas_sexuales">N. de parejas sexuales</string>
+    <string name="crp_condon">¿Utiliza condón?</string>
+    <string-array name="crp_condon_list">
+        <item>Seleccione una opción</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+    <string name="crp_vacuna_vph">¿Tiene vacuna VPH?</string>
+    <string-array name="crp_vacuna_vph_list">
+        <item>Seleccione una opción</item>
+        <item>Sin vacuna</item>
+        <item>Una dosis</item>
+        <item>Dos dosis</item>
+        <item>Tres dosis</item>
+        <item>No sabe/No responde</item>
+    </string-array>
+    <string name="crp_ultima_citologia">Última citología</string>
+    <string-array name="crp_ultima_citologia_list">
+        <item>Seleccione una opción</item>
+        <item>Menos de 3 años</item>
+        <item>Más de 3 años</item>
+        <item>Nunca</item>
+        <item>No sabe/No responde</item>
+    </string-array>
+    <string name="crp_prueba_vph">Prueba ADN VPH</string>
+    <string-array name="crp_prueba_vph_list">
+        <item>Seleccione una opción</item>
+        <item>No</item>
+        <item>Si menos de 5 años</item>
+        <item>Si más de 5 años</item>
+        <item>No sabe/No responde</item>
+    </string-array>
+    <string name="crp_menopausia">Menopausia</string>
+    <string-array name="crp_menopausia_list">
+        <item>Seleccione una opción</item>
+        <item>Si</item>
+        <item>No</item>
+        <item>No sabe/No responde</item>
+    </string-array>
+    <string name="crp_inf_trans_sex">Infecciones de transmisión sexual</string>
+    <string name="crp_crear">Crear paciente</string>
+
+    <!--Configuración-->
+    <string name="cfg_titulo">Configuración General</string>
+    <string name="cfg_info">Información VPH</string>
+    <string name="cfg_modo">Modo</string>
+    <string name="cfg_entrenamiento">Entrenamiento</string>
+    <string name="cfg_verificacion">Verificación</string>
+    <string name="cfg_guardar">Guardar</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Ingresar</string>
+    <string name="pacientes">PACIENTES</string>
+    <string name="configuraci_n">CONFIGURACIÓN</string>
+    <string name="consultar">Consultar</string>
+    <string name="crear">Crear</string>
+    <string name="configuraci_n_general">Configuración general</string>
+    <string name="sesion">SESION</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="men_principal">Menú principal</string>
+    <string name="home">HOME</string>
+    <string name="tipo_de_identificaci_n">Tipo de identificación</string>
+    <string name="negativo">Negativo</string>
+    <string name="positivo">Positivo</string>
+    <string name="ti">TI</string>
+    <string name="vph">VPH</string>
+    <string name="str_camara">Cámara</string>
+    <string name="camara_del_dispositivo">Dispositivo móvil</string>
+    <string name="camara_usb">USB</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="_si">Si</string>
+    <string name="imagen_configuracion_general">Imagen configuración general</string>
+    <string name="barra_lateral">Barra lateral</string>
+</resources>

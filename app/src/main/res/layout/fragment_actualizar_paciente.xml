@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_normal"
+    tools:context="com.yulagarces.citobot.ui.patient.CrearPacienteFragment">
+
+    <LinearLayout
+        android:id="@+id/crp_contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/crp_nuevo_paciente_ico"
+            android:layout_width="46dp"
+            android:layout_height="55dp"
+            android:background="@drawable/icono_nuevo_paciente"
+            android:contentDescription="@string/crp_nuevo_paciente_ico"/>
+        <TextView
+            android:id="@+id/crp_nuevo_paciente_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar paciente"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textAppearance="@style/textoAzulNegritaXL"/>
+        <LinearLayout
+            android:id="@+id/crp_nuevo_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="35dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/fondo_blanco"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/crp_tipo_id_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/textoVerdeL"
+                android:text="@string/crp_tipo_id"
+                android:labelFor="@+id/crp_tipo_id_txt"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_form">
+
+                <TextView
+                    android:id="@+id/crp_tipo_id_txt_"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/crp_id_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/textoVerdeL"
+                android:layout_marginTop="@dimen/margin_top_form"
+                android:text="@string/crp_id"
+                android:labelFor="@+id/crp_id_txt"/>
+            <EditText
+                android:id="@+id/crp_id_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:backgroundTint="@color/principal"
+                android:foregroundTintMode="@color/principal"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/crp_primer_nombre_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/textoVerdeL"
+                android:layout_marginTop="@dimen/margin_top_form"
+                android:text="@string/crp_primer_nombre"
+                android:labelFor="@+id/crp_primer_nombre_txt"/>
+            <EditText
+                android:id="@+id/crp_primer_nombre_txt"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/principal"
+                android:foregroundTintMode="@color/principal"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/crp_segundo_nombre_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/textoVerdeL"
+                android:layout_marginTop="@dimen/margin_top_form"
+                android:text="@string/crp_segundo_nombre"
+                android:labelFor="@+id/crp_segundo_nombre_txt"/>
+            <EditText
+                android:id="@+id/crp_segundo_nombre_txt"
+                android:layout_width="match_parent"
+                android:tag="opcional"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/principal"
+                android:foregroundTintMode="@color/principal"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/crp_primer_apellido_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/textoVerdeL"
+                android:layout_marginTop="@dimen/margin_top_form"
+                android:text="@string/crp_primer_apellido"
+                android:labelFor="@+id/crp_primer_apellido_txt"/>
+            <EditText
+                android:id="@+id/crp_primer_apellido_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/principal"
+                android:foregroundTintMode="@color/principal"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:id="@+id/crp_segundo_apellido_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/textoVerdeL"
+                android:layout_marginTop="@dimen/margin_top_form"
+                android:text="@string/crp_segundo_apellido"
+                android:labelFor="@+id/crp_segundo_apellido_txt"
+                />
+
+            <EditText
+                android:id="@+id/crp_segundo_apellido_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="opcional"
+                android:backgroundTint="@color/principal"
+                android:foregroundTintMode="@color/principal"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/crp_fecha_nacimiento_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/textoVerdeL"
+                android:layout_marginTop="@dimen/margin_top_form"
+                android:text="@string/crp_fecha_nacimiento"
+                android:labelFor="@+id/crp_fecha_nacimiento_txt"
+                />
+            <EditText
+                android:id="@+id/crp_fecha_nacimiento_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/principal"
+                android:foregroundTintMode="@color/principal"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/crp_crear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAppearance="@style/textoBlancoNegritaL"
+            android:background="@drawable/btn_primario"
+            android:text="Actualizar"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

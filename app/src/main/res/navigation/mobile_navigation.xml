@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_menu_principal">
+
+    <fragment
+        android:id="@+id/nav_menu_principal"
+        android:name="com.yulagarces.citobot.ui.home.MenuPrincipalFragment"
+        android:label="Menú principal"
+        tools:layout="@layout/fragment_menu_principal" >
+        <action
+            android:id="@+id/action_nav_menu_principal_to_nav_crear_paciente"
+            app:destination="@id/nav_crear_paciente" />
+        <action
+            android:id="@+id/action_nav_menu_principal_to_nav_consultar_paciente"
+            app:destination="@id/nav_consultar_paciente" />
+        <action
+            android:id="@+id/action_nav_menu_principal_to_nav_tamizaje_foto"
+            app:destination="@id/nav_tamizaje_foto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_consultar_paciente"
+        android:name="com.yulagarces.citobot.ui.patient.ConsultarMainFragment"
+        android:label="Consultar paciente"
+        tools:layout="@layout/fragment_consultar_paciente" >
+        <action
+            android:id="@+id/action_nav_consultar_paciente_to_nav_tamizaje_paso1"
+            app:destination="@id/nav_tamizaje_paso1" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_consultar_paciente_t"
+        android:name="com.yulagarces.citobot.ui.patient.ConsultarPacienteTFragment"
+        android:label="Consultar paciente"
+        tools:layout="@layout/fragment_consultar_paciente_t" >
+        <action
+            android:id="@+id/action_nav_consultar_paciente_to_nav_detalle_paciente"
+            app:destination="@id/nav_detalle_paciente" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_crear_paciente"
+        android:name="com.yulagarces.citobot.ui.patient.CrearPacienteFragment"
+        android:label="Crear paciente"
+        tools:layout="@layout/fragment_crear_paciente" >
+        <action
+            android:id="@+id/action_nav_crear_paciente_to_nav_menu_principal"
+            app:destination="@id/nav_menu_principal" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_actualizar_paciente"
+        android:name="com.yulagarces.citobot.ui.patient.ActualizarPacienteFragment"
+        android:label="Actualizar paciente"
+        tools:layout="@layout/fragment_actualizar_paciente" >
+        <action
+            android:id="@+id/action_nav_actualizar_paciente_to_nav_detalle_paciente"
+            app:destination="@id/nav_detalle_paciente" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_configuracion"
+        android:name="com.yulagarces.citobot.ui.config.ConfiguracionFragment"
+        android:label="Configuración"
+        tools:layout="@layout/fragment_configuracion" />
+
+    <fragment
+        android:id="@+id/nav_detalle_paciente"
+        android:name="com.yulagarces.citobot.ui.patient.DetallePacienteFragment"
+        android:label="Detalle paciente"
+        tools:layout="@layout/fragment_detalle_paciente" >
+        <action
+            android:id="@+id/action_nav_detalle_paciente_to_nav_tamizaje_foto"
+            app:destination="@id/nav_tamizaje_foto" />
+        <action
+            android:id="@+id/action_nav_detalle_paciente_to_nav_actualizar_paciente"
+            app:destination="@id/nav_actualizar_paciente" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detalle_tamizaje"
+        android:name="com.yulagarces.citobot.ui.screening.DetalleTamizajeFragment"
+        android:label="Detalle tamizaje"
+        tools:layout="@layout/fragment_detalle_tamizaje" >
+        <action
+            android:id="@+id/action_nav_detalle_tamizaje_to_nav_lista_tamizaje"
+            app:destination="@id/nav_lista_tamizaje" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tamizaje_paso1"
+        android:name="com.yulagarces.citobot.ui.screening.Tamizaje1Fragment"
+        android:label="Tamizaje paso 1"
+        tools:layout="@layout/fragment_tamizaje1" >
+        <action
+            android:id="@+id/action_nav_tamizaje_paso1_to_nav_tamizaje_paso2"
+            app:destination="@id/nav_tamizaje_paso2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tamizaje_paso2"
+        android:name="com.yulagarces.citobot.ui.screening.Tamizaje2Fragment"
+        android:label="Tamizaje paso 2"
+        tools:layout="@layout/fragment_tamizaje2" >
+        <action
+            android:id="@+id/action_nav_tamizaje_paso2_to_nav_tamizaje_foto"
+            app:destination="@id/nav_tamizaje_foto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tamizaje_foto"
+        android:name="com.yulagarces.citobot.ui.screening.TamizajeFotoFragment"
+        android:label="Tamizaje foto"
+        tools:layout="@layout/fragment_tamizaje_foto" >
+        <action
+            android:id="@+id/action_nav_tamizaje_foto_to_nav_lista_tamizaje"
+            app:destination="@id/nav_lista_tamizaje" />
+        <action
+            android:id="@+id/action_nav_tamizaje_foto_to_nav_crear_paciente"
+            app:destination="@id/nav_crear_paciente" />
+        <action
+            android:id="@+id/action_nav_tamizaje_foto_to_nav_menu_principal"
+            app:destination="@id/nav_menu_principal" />
+        <action
+            android:id="@+id/action_nav_tamizaje_foto_to_nav_detalle_tamizaje"
+            app:destination="@id/nav_detalle_tamizaje" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lista_tamizaje"
+        android:name="com.yulagarces.citobot.ui.screening.ListaTamizajeFragment"
+        android:label="Lista de tamizajes"
+        tools:layout="@layout/fragment_lista_tamizaje" >
+        <action
+            android:id="@+id/action_nav_lista_tamizaje_to_nav_detalle_tamizaje"
+            app:destination="@id/nav_detalle_tamizaje" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.yulagarces.citobot.ui.config.CerrarSesionFragment"
+        android:label="Cerrar sesión"
+        tools:layout="@layout/fragment_cerrar_sesion" />
+
+    <fragment
+        android:id="@+id/nav_purchase_cerrar"
+        android:name="com.yulagarces.citobot.ui.config.PurchaseConfirmationDialogFragment"
+        android:label="Cerrar sesión"
+        tools:layout="@layout/fragment_cerrar_sesion" />
+
+
+
+</navigation>

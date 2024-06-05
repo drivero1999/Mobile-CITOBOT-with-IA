@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lp_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="11dp"
+    android:padding="15dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:paddingTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/lp_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:layout_marginEnd="5dp"
+            style="@style/textoAzulNegritaL"/>
+        <TextView
+            android:id="@+id/lp_tipo_documento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo documento"
+            android:layout_marginTop="5dp"
+            style="@style/textoAzulOscuroM"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/lp_numero_documento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de documento"
+            style="@style/textoAzulOscuroNegritaM"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/flecha_verde_mar"
+        android:contentDescription="Flecha ir"/>
+
+</LinearLayout>

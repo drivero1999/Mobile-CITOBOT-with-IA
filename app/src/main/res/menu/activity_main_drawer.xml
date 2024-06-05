@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="@string/home"
+        android:id="@+id/homeStr">
+        <menu>
+            <item
+                android:id="@+id/nav_menu_principal"
+                android:icon="@drawable/ic_menu"
+                android:title="@string/men_principal"
+                />
+        </menu>
+
+    </item>
+
+    <item android:title="@string/pacientes"
+        android:id="@+id/patientesStr">
+        <menu>
+            <item
+                android:id="@+id/nav_consultar_paciente_t"
+                android:icon="@drawable/ic_question"
+                android:title="@string/consultar" />
+            <item
+                android:id="@+id/nav_crear_paciente"
+                android:icon="@drawable/ic_crear"
+                android:title="@string/crear" />
+        </menu>
+
+    </item>
+
+    <item android:title="@string/configuraci_n"
+        android:id="@+id/configStr">
+        <menu>
+            <item
+                android:id="@+id/nav_configuracion"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/configuraci_n_general" />
+        </menu>
+    </item>
+
+    <item android:title="@string/sesion"
+        android:id="@+id/sesionStr"
+        tools:iconTint="@color/principal"
+        tools:targetApi="o">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/cerrar_sesi_n" />
+        </menu>
+    </item>
+
+
+</menu>

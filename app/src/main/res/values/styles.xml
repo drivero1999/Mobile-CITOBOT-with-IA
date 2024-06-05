@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textoBlancoL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/letra_descripcion_l</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoBlancoNegritaL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/letra_descripcion_l</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+
+    <style name="textoAzulM" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/principal</item>
+        <item name="android:textSize">@dimen/letra_descripcion_m</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoAzulNegritaM" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/principal</item>
+        <item name="android:textSize">@dimen/letra_descripcion_m</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoAzulL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/principal</item>
+        <item name="android:textSize">@dimen/letra_descripcion_l</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoAzulNegritaL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/principal</item>
+        <item name="android:textSize">@dimen/letra_descripcion_l</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoAzulXL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/principal</item>
+        <item name="android:textSize">@dimen/letra_descripcion_xl</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoAzulNegritaXL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/principal</item>
+        <item name="android:textSize">@dimen/letra_descripcion_xl</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoVerdeM" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/text_secundary</item>
+        <item name="android:textSize">@dimen/letra_descripcion_m</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+
+    <style name="textoVerdeL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/text_secundary</item>
+        <item name="android:textSize">@dimen/letra_descripcion_l</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoVerdeNegritaL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/text_secundary</item>
+        <item name="android:textSize">@dimen/letra_descripcion_l</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoVerdeXL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/text_secundary</item>
+        <item name="android:textSize">@dimen/letra_descripcion_xl</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoVerdeNegritaXL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/text_secundary</item>
+        <item name="android:textSize">@dimen/letra_descripcion_xl</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoAzulOscuroM" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/azul_oscuro</item>
+        <item name="android:textSize">@dimen/letra_descripcion_m</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoAzulOscuroNegritaM" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/azul_oscuro</item>
+        <item name="android:textSize">@dimen/letra_descripcion_m</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoAzulOscuroL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/azul_oscuro</item>
+        <item name="android:textSize">@dimen/letra_descripcion_l</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textoAzulOscuroNegritaL" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/azul_oscuro</item>
+        <item name="android:textSize">@dimen/letra_descripcion_l</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="Widget.Theme.ClinkCameraDemo.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.ClinkCameraDemo.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/colorOnSecondary</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="mi_estilo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorSecondary">@color/text_secundary</item>
+    </style>
+
+</resources>

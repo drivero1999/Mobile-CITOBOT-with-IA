@@ -1,0 +1,42 @@
+package com.yulagarces.citobot.data.models
+
+import com.google.gson.annotations.SerializedName
+
+data class Patient(
+    @SerializedName("per_identificacion") val per_identificacion: String,
+    @SerializedName("per_tip_id") val per_tip_id: String,
+    @SerializedName("per_primer_nombre") val per_primer_nombre: String,
+    @SerializedName("per_otros_nombres") val per_otros_nombres: String,
+    @SerializedName("per_primer_apellido") val per_primer_apellido: String,
+    @SerializedName("per_segundo_apellido") val per_segundo_apellido: String,
+    @SerializedName("pac_per_identificacion") val pac_per_identificacion: String,
+    @SerializedName("pac_fecha_nacimiento") val pac_fecha_nacimiento: String,
+    @SerializedName("pac_direccion") val pac_direccion: String?,
+    @SerializedName("pac_telefono") val pac_telefono: String?,
+    @SerializedName("pac_celular") val pac_celular: String?,
+    @SerializedName("pac_correo") val pac_correo: String?,
+    @SerializedName("pac_contacto_alternativo") val pac_contacto_alternativo: String?,
+    @SerializedName("pac_telefono_contacto_alternativo") val pac_telefono_contacto_alternativo: String?,
+    @SerializedName("pac_nivel_educacion") val pac_nivel_educacion: String?,
+    @SerializedName("pac_estado_civil") val pac_estado_civil: String?,
+    @SerializedName("pac_situacion_laboral") val pac_situacion_laboral: String?,
+    @SerializedName("pac_eps_id") val pac_eps_id: Int?,
+    @SerializedName("pac_regimen_salud") val pac_regimen_salud: String?,
+    @SerializedName("pac_estrato") val pac_estrato: Int?,
+    @SerializedName("pac_diabetes") val pac_diabetes: String?,
+    @SerializedName("pac_fuma") val pac_fuma: String?,
+    @SerializedName("pac_peso") val pac_peso: Int?,
+    @SerializedName("pac_talla") val pac_talla: Int?,
+    @SerializedName("pac_primera_mestruacion") val pac_primera_mestruacion: Int?,
+    @SerializedName("pac_partos") val pac_partos: String?,
+    @SerializedName("pac_dispositivo_intrauterino") val pac_dispositivo_intrauterino: String?,
+    @SerializedName("pac_tiempo_insercion_DIU") val pac_tiempo_insercion_DIU: String?,
+    @SerializedName("pac_anticonceptivos_orales") val pac_anticonceptivos_orales: String?,
+    @SerializedName("pac_parejas_sexuales") val pac_parejas_sexuales: Int?,
+    @SerializedName("pac_relacion_condon") val pac_relacion_condon: String?,
+    @SerializedName("pac_vacuna_vph") val pac_vacuna_vph: String?,
+    @SerializedName("pac_ultima_citologia") val pac_ultima_citologia: String?,
+    @SerializedName("pac_prueba_ADN_VPH") val pac_prueba_ADN_VPH: String?,
+    @SerializedName("pac_menopausia") val pac_menopausia: String?,
+    @SerializedName("pac_infecciones_ts") val pac_infecciones_ts: String?
+)

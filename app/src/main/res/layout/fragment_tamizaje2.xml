@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.yulagarces.citobot.ui.screening.Tamizaje2Fragment">
+
+    <LinearLayout
+        android:id="@+id/t2_contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/t2_tamizaje_ico"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/icono_tamizaje"/>
+        <TextView
+            android:id="@+id/t2_tamizaje_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/t1_titulo"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textAppearance="@style/textoAzulNegritaXL"/>
+
+        <TextView
+            android:id="@+id/t2_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:text="Nombre"
+            android:background="@drawable/fondo_gris_azulado"
+            android:textAppearance="@style/textoVerdeNegritaL"/>
+
+        <LinearLayout
+            android:id="@+id/t2_contenedor_vph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:visibility="gone"
+            android:padding="25dp"
+            android:orientation="horizontal"
+            android:background="@drawable/fondo_blanco">
+            <TextView
+                android:id="@+id/t2_vph_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/t2_vph"
+                android:layout_weight="4"
+                android:textAppearance="@style/textoAzulOscuroNegritaL"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/t2_vph_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:checked="true"
+                android:textOff="-"
+                android:textOn="+"
+                android:textAlignment="viewEnd"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/t2_contenedor_contraste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:padding="25dp"
+            android:background="@drawable/fondo_blanco"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/t2_contraste_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/t2_contraste"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:textAppearance="@style/textoAzulOscuroNegritaL"/>
+
+            <RadioGroup
+                android:id="@+id/t2_contraste"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="4">
+
+                <RadioButton
+                    android:id="@+id/radio_sin_contraste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t2_sin_contraste"
+                    android:buttonTint="@color/principal"
+                    android:textColor="@color/black"
+                    android:textColorLink="@color/black" />
+
+                <RadioButton android:id="@+id/radio_acido"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/principal"
+                    android:text="@string/t2_acido"/>
+                <RadioButton android:id="@+id/radio_lugol"
+                    android:layout_width="wrap_content"
+                    android:buttonTint="@color/principal"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/t2_lugol"/>
+                <RadioButton android:id="@+id/radio_acido_lugol"
+                    android:layout_width="wrap_content"
+                    android:buttonTint="@color/principal"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/t2_acido_lugol"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/t2_continuar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/t2_continuar"
+            android:padding="15dp"
+            android:textAppearance="@style/textoBlancoL"
+            android:background="@drawable/btn_primario"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

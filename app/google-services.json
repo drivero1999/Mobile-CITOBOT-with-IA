@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "311600495983",
+    "project_id": "citobot-app",
+    "storage_bucket": "citobot-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311600495983:android:30ca6ef278984857b33c9a",
+        "android_client_info": {
+          "package_name": "com.sach.citobot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311600495983-lev5m3hmrb3cjgm33g6jqu4i7k94tqlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLBakikoDwZGDLBQxDlEpaz_9SqJM_BLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311600495983-lev5m3hmrb3cjgm33g6jqu4i7k94tqlj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "311600495983-f8ler0nj9d6vnn5ffeeul0ppqgv255vt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.citobot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311600495983:android:386c07acae045c39b33c9a",
+        "android_client_info": {
+          "package_name": "com.yulagarces.citobot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311600495983-lev5m3hmrb3cjgm33g6jqu4i7k94tqlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLBakikoDwZGDLBQxDlEpaz_9SqJM_BLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311600495983-lev5m3hmrb3cjgm33g6jqu4i7k94tqlj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "311600495983-f8ler0nj9d6vnn5ffeeul0ppqgv255vt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.citobot"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

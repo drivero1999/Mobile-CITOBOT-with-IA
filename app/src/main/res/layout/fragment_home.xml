@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/padding_lateral"
+        android:paddingLeft="@dimen/padding_lateral"
+        tools:context=".MenuPrincipalFragment">
+
+        <LinearLayout
+            android:id="@+id/mp_contenedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mp_texto_registrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mp_titulo"
+                android:background="@drawable/fondo_gris_azulado"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                style="@style/textoAzulNegritaL"/>
+
+            <LinearLayout
+                android:id="@+id/mp_nuevo_paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/fondo_blanco"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/mp_nuevo_paciente_ico"
+                    android:layout_width="46dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/icono_nuevo_paciente"/>
+                <TextView
+                    android:id="@+id/mp_nuevo_paciente_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mp_paciente"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textAppearance="@style/textoAzulNegritaXL"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mp_nuevo_tamizaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/fondo_blanco"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/mp_nuevo_tamizaje_ico"
+                    android:layout_width="46dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/icono_nuevo_tamizaje"/>
+                <TextView
+                    android:id="@+id/mp_nuevo_tamizaje_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mp_tamizaje"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textAppearance="@style/textoAzulNegritaXL"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

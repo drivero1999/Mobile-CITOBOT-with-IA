@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.yulagarces.citobot.ui.screening.DetalleTamizajeFragment">
+
+    <LinearLayout
+        android:id="@+id/dt_contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/dt_home"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="right"
+            android:background="@drawable/home"
+            android:contentDescription="@string/all" />
+        <ImageView
+            android:id="@+id/dt_consultar_paciente_ico"
+            android:layout_width="46dp"
+            android:layout_height="55dp"
+            android:background="@drawable/icono_tamizaje"
+            android:contentDescription="@string/all" />
+        <TextView
+            android:id="@+id/dt_detalle_paciente_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dt_titulo"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textAppearance="@style/textoAzulNegritaXL"/>
+        <LinearLayout
+            android:id="@+id/dt_contenedor_datos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="30dp"
+            android:background="@drawable/fondo_gris_azulado">
+            <LinearLayout
+                android:id="@+id/dt_contenedor_tipo_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/dt_tipo_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/textoAzulOscuroL"/>
+                <TextView
+                    android:id="@+id/dt_num_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/textoAzulOscuroNegritaL"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/dt_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/textoVerdeNegritaL"/>
+            <TextView
+                android:id="@+id/dt_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/textoAzulOscuroL"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dt_tipo_riesgo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/textoVerdeNegritaXL"
+            android:background="@drawable/fondo_blanco"/>
+
+        <LinearLayout
+            android:id="@+id/dp_contenedor_vph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fondo_blanco">
+            <TextView
+                android:id="@+id/dt_vph_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/vph"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/textoAzulOscuroNegritaL"/>
+
+            <TextView
+                android:id="@+id/dp_vph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="56dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_weight="0.3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dp_contenedor_contraste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fondo_blanco">
+            <TextView
+                android:id="@+id/dt_contraste_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Contraste"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/textoAzulOscuroNegritaL"/>
+
+            <TextView
+                android:id="@+id/dp_contraste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="56dp"
+                android:text="Sin Contraste"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_weight="0.3"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgDecode"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/all" />
+
+        <LinearLayout
+            android:id="@+id/t2_contenedor_vph_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@drawable/fondo_blanco">
+            <TextView
+                android:id="@+id/t2_vph_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/t2_vph"
+                android:layout_weight="4"
+                android:textAppearance="@style/textoAzulOscuroNegritaL"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/t2_vph_switch_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:checked="true"
+                android:textOff="@string/negativo"
+                android:textOn="@string/positivo"
+                android:textAlignment="viewEnd"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/t2_contenedor_contraste_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:background="@drawable/fondo_blanco"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/t2_contraste_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/t2_contraste"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:textAppearance="@style/textoAzulOscuroNegritaL"/>
+
+            <RadioGroup
+                android:id="@+id/t2_contraste_new"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="4">
+
+                <RadioButton
+                    android:id="@+id/radio_sin_contraste_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t2_sin_contraste"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/principal"
+                    android:textColorLink="@color/black" />
+
+                <RadioButton android:id="@+id/radio_acido_new"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/principal"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t2_acido"/>
+                <RadioButton android:id="@+id/radio_lugol_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/principal"
+                    android:textColor="@color/black"
+                    android:text="@string/t2_lugol"/>
+                <RadioButton android:id="@+id/radio_acido_lugol_new"
+                    android:layout_width="wrap_content"
+                    android:buttonTint="@color/principal"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/t2_acido_lugol"/>
+            </RadioGroup>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lt_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/newScreen"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Nuevo Tamizaje con igual fotografía"
+            android:textAppearance="@style/textoBlancoL"
+            android:padding="20dp"
+            android:background="@drawable/btn_primario"/>
+
+        <LinearLayout
+            android:id="@+id/contenedorButtons"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_guardar"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Guardar"
+                android:textAppearance="@style/textoBlancoL"
+                android:padding="20dp"
+                android:background="@drawable/btn_primario"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancelar"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Cancelar"
+                android:textAppearance="@style/textoBlancoL"
+                android:padding="20dp"
+                android:background="@drawable/btn_primario"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
